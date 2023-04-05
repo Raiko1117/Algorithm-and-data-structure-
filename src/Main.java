@@ -2,9 +2,8 @@ public class Main {
 
     public static void main(String[] args)
     {
-        Task3 task3 = new Task3();
-
-        task3.calculate();
+       Task4 task4 = new Task4();
+       task4.calculate();;
 
     }
 }
