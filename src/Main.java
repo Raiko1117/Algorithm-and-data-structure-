@@ -1,22 +1,16 @@
 import java.util.Scanner;
 public class Main {
-
-    public static int findMin(int[] arr, int n, int i, int j)
-    {
-        if (j >= n)
-        {
-            return arr[i];
+    public static int sum(int[] arr,  int i){
+        if(i >= arr.length){
+            return 0;
         }
-
-        if (arr[i] > arr[j])
-        {
-            i = j;
-        }
-        return findMin(arr, n, i, j + 1);
+        return arr[i] + sum(arr,i+1);
     }
 
+    public static double findAverage(int[] arr){
+        return (double) sum(arr, 0) / arr.length;
 
-
+    }
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
@@ -28,8 +22,8 @@ public class Main {
             arr[i] = sc.nextInt();
         }
 
-        int min = findMin(arr, n, 0, 1);
-        System.out.println(min);
+        double res = findAverage(arr);
+        System.out.println(res);
 
     }
 }
