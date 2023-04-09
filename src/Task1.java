@@ -7,7 +7,7 @@ public class Task1 {
             return arr[i];
         }
 
-        if (arr[i] > arr[j])
+        if (arr[i] > arr[j])//5 6 4 8 9
         {
             i = j;
         }

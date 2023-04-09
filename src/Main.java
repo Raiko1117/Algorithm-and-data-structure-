@@ -1,12 +1,12 @@
+import java.util.Scanner;
 public class Main {
 
-    public static void main(String[] args)
-    {
-      Task6 task6 = new Task6();
-      task6.calculate();
-
+    public static void main(String[] args) {
+       Task8 task8 = new Task8();
+       task8.calculate();
     }
 }
+
 
 
 

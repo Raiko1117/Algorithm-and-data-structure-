@@ -23,9 +23,8 @@ public class Task2 {
         {
             arr[i] = sc.nextInt();
         }
-
-        Task2 task2 = new Task2();
-        double res = task2.findAverage(arr);
+        double res = findAverage(arr);
         System.out.println(res);
+
     }
 }
